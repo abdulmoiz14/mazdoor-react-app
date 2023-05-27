@@ -1,0 +1,3 @@
+react-bootstrap
+materialUI
+material-icon

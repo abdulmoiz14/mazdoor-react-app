@@ -3,8 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-function CollapsibleExample() {
+import Button from 'react-bootstrap/Button';
+function NavbarComponent() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
@@ -28,9 +28,11 @@ function CollapsibleExample() {
           </Nav>
           <Nav>
             <Nav.Link href="#deets">Signup/Login</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Become a tasker
-            </Nav.Link>
+        +
+              <Button variant="outline-light">
+                Become a Tasker
+              </Button>
+          
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -38,4 +40,4 @@ function CollapsibleExample() {
   );
 }
 
-export default CollapsibleExample;
+export default NavbarComponent;

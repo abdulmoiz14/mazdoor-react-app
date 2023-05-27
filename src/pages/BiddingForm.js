@@ -1,16 +1,16 @@
 import React from "react";
-import CollapsibleExample from "../Components/Navbar.js";
-import FormDisabledExample from "../Components/BidForm.js";
+import NavbarComponent from "../Components/Navbar.js";
+import Bidform from "../Components/BidForm.js";
 import "../stylesheets/BiddingForm.css";
 function BiddingForm(){
     return(
         <div id="container">
             <div id="navbar">
-                <CollapsibleExample />
+                <NavbarComponent />
             </div>
             <div id="body">
-                <div id="bidform">
-                    <FormDisabledExample />
+                <div id="bidform" className="column" >
+                    <Bidform />
                 </div>
             </div>
         </div>
